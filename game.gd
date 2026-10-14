@@ -58,7 +58,7 @@ func _draw() -> void:
 
 func _input(event: InputEvent) -> void:
     if event is InputEventScreenTouch:
-        var pos := event.position
+        var pos: Vector2 = (event as InputEventScreenTouch).position
         if event.pressed:
             if pos.x < 140.0 and pos.y > 420.0:
                 left_pressed = true
