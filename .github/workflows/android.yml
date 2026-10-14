@@ -47,7 +47,7 @@ jobs:
       - name: Export APK
         run: |
           ./Godot_v4.4.1-stable_linux.x86_64 --headless --path . --editor --quit
-          ./Godot_v4.4.1-stable_linux.x86_64 --headless --path . --export-debug Android Sonic_MS_Remake.apk
+          ./Godot_v4.4.1-stable_linux.x86_64 --headless --verbose --path . --export-debug Android Sonic_MS_Remake.apk
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
